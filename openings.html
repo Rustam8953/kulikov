@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="link" content="">
+    <link rel="stylesheet" href="./lib/ChiefSlider/chief-slider.min.css">
+    <link rel="icon" href="https://bitrix.kulikov.com/upload/landing/a2a/bnypx19rsgehgfzwub5ida5rsk8mgqv3/%D0%B4%D0%BB%D1%8F_%D0%A1%D0%AD%D0%94%D0%90_1_.png">
+    <title>Вакансии</title>
+    <link rel="stylesheet" href="./lib/slide-lib/slide-r.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header></header>
+    <container>
+        <div class="openings">
+            <div class="g-box">
+                <h1 class="openings-title fs-40 fw-bold title p-sides">Вакансии</h1>
+                <div class="border mg-center p-sides"></div>
+                <div class="openings-content">
+                    <div class="openings-left o-child p-std slide-block w-50">
+                        <div class="openings-left-img p-std i-wdt">
+                            <img src="./img/openings/rating_1_1_2_@2x.png" alt="" class="i-size">
+                        </div>
+                        <div class="openings-info-left w-100">
+                            <h3 class="openings-left-title">СЕРВИС-КОНСУЛЬТАНТ</h3>
+                            <span>
+                                <p class="openings-left-text fs-14">Любишь сладкое и мечтаешь работать там, где его немереное количество? Тогда тебе к нам! Наша команда в поиске активных ответственных сервис-консультантов с опытом работы. Мы ждем тех, кто не боится перемен и готов дарить радость каждому гостю нашей кондитерской! Отправляй свое резюме на электронный адрес <a href="email: hr.kdk@kulikov.com" class="link o-link">hr.kdk@kulikov.com</a></p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="openings-right o-child p-std slide-block-left w-50">
+                        <div class="openings-right-img p-std i-wdt">
+                            <img src="./img/openings/rating_2@2x.png" alt="" class="i-size">
+                        </div>
+                        <div class="openings-info-right w-100">
+                            <h3 class="openings-right-title">БАРИСТА</h3>
+                            <span>
+                                <p class="openings-right-text fs-14">Наша фиолетовая команда находится в поиске креативного бариста. Если ты разбираешься в сортах кофе, умеешь дарить людям сладкое настроение и вкусную атмосферу, то скорее отправляй свое резюме на почту <a href="email: hr.kdk@kulikov.com" class="link o-link">hr.kdk@kulikov.com</a> и может именно ты станешь частью нас!</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </container>
+    <footer></footer>
+    <script src="./lib/ChiefSlider/chief-slider.min.js"></script>
+    <script src="./js/kulikov.js"></script>
+    <script src="./lib/slide-lib/slide-r.min.js"></script>
+    <script>
+        const slideLeftImg = new SlideLeft('.openings-left-img'),
+              slideRightImg = new SlideRight('.openings-right-img'),
+              slideInfoLeft = new SlideLeft('.openings-info-left'),
+              slideInfoRight = new SlideRight('.openings-info-right'),
+              slideFooterLeft = new SlideLeft('.footer-soc'),
+              slideFooterRight = new SlideRight('.footer-nav'),
+              slideFooterBottom = new SlideBottom('.footer-text')
+    </script>
+</body>
+</html>
