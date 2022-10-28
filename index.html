@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./lib/ChiefSlider/chief-slider.min.js"></script>
     <script src="./lib/slide-lib/slide-r.min.js"></script>
+    <script src="https://github.com/xakplant/stickjaw/blob/master/stickjaw.min.js"></script>
 </head>
 <body>
     <main>
@@ -23,11 +24,11 @@
         </header>
         <container>
             <div class="container">
-                <div class="landing w-fill">
+                <div class="landing w-fill" style="height: 100% !important;">
                     <div class="landing-block">
                         <div class="landing-items">
-                            <div class="landing-item">
-                                <article class="landing-item-box l-bg l-bg-1 h-fill pos-rel">
+                            <div class="landing-item" data-proportion-h="2">
+                                <article class="landing-item-box l-bg l-bg-1 h-fill pos-rel" style="height: 90vh;">
                                     <header class="landing-item-info">
                                         <div class="landing-item-title">
                                             <h2 class="l-title">О КУЛИКОВСКОМ</h2>
@@ -39,7 +40,7 @@
                                             <button class="btn-bg-pink fs-13 fw-700 btn-p-2 btn-font md-1-button">Подробнее</button>
                                         </div>
                                     </header>
-                                    <figure class="landing-item-bg m-none"></figure>
+                                    <figure class="landing-item-bg m-none h-fill"></figure>
                                 </article>
                             </div>
                             <div class="landing-item">
@@ -55,7 +56,7 @@
                                             <button class="btn-bg-pink fs-13 fw-700 btn-p-2 btn-font md-1-button">Подробнее</button>
                                         </div>
                                     </header>
-                                    <figure class="landing-item-bg m-none"></figure>
+                                    <figure class="landing-item-bg m-none h-fill"></figure>
                                 </article>
                             </div>
                             <div class="landing-item">
@@ -72,7 +73,7 @@
                                             <button class="btn-bg-pink fs-13 fw-700 btn-p-2 btn-font md-1-button">Подробнее</button>
                                         </div>
                                     </header>
-                                    <figure class="landing-item-bg m-none"></figure>
+                                    <figure class="landing-item-bg m-none h-fill"></figure>
                                 </article>
                             </div>
                         </div>
@@ -99,6 +100,16 @@
         const slideFooterLeft = new SlideLeft('.footer-soc')
         const slideFooterRight = new SlideRight('.footer-nav')
         const slideFooterBottom = new SlideBottom('.footer-text')
+
+
+        const sj = new SJ({
+            options: {
+                h1w: true
+            },
+            settings: {
+                windowResize: true,
+            }
+        })
     </script>
 </body>
 </html>

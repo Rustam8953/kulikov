@@ -28,10 +28,10 @@ body {
         font-size: 0.9rem;
     }
     &-17 {
-        font-size: 1.25rem;
+        font-size: 1.21429rem;
     }
     &-14 {
-        font-size: 14px;
+        font-size: 1rem;
     }
     &-40 {
         font-size: 40px;
@@ -45,8 +45,17 @@ body {
     &-20 {
         font-size: 20px;
     }
+    &-23 {
+        font-size: 1.64286rem;
+    }
     &-10 {
         font-size: 10px;
+    }
+    &-26 {
+        font-size: 1.85714rem;
+    }
+    &-42 {
+        font-size: 3rem;
     }
 }
 
@@ -100,6 +109,10 @@ body {
 .g-box {
     width: 1140px;
     margin: 0 auto;
+    &-faq {
+        width: 1110px;
+        margin: 0 auto;
+    }
 }
 
 .g {
@@ -209,18 +222,18 @@ body {
     padding: 30px 15px;
     &-items {
         display: flex;
-        height: 800px;
         position: relative;
     }
     &-item {
         width: 34%;
-        height: 755px;
+        height: auto;
         position: relative;
         color: #ffffff;
         padding: 0 15px;
         &-box {
             display: flex;
             align-items: flex-end;
+            height: auto;
         }
         &-info {
             position: relative;
@@ -229,8 +242,8 @@ body {
         }
         &-bg {
             position: absolute;
-            height: 100%;
             width: 100%;
+            height: auto;
             background-color: $pinkColor;
             opacity: 0.3;
             top: 0;
@@ -282,7 +295,7 @@ body {
     &-md1 {
         &-right {
             & img {
-                width: 100%;
+                width: 295px;
                 height: auto;
             }
         }
@@ -364,6 +377,9 @@ body {
 @media (max-width: 1140px) {
     .g-box {
         width: 960px;
+        &-faq {
+            width: 960px;
+        }
     }
     .footer {
         &-main {
@@ -429,12 +445,18 @@ body {
     }
     .g-box {
         width: 720px;
+        &-faq {
+            width: 720px;
+        }
     }
 }
 
 @media (max-width: 760px) {
     .g-box {
         width: 560px;
+        &-faq {
+            width: 560px;
+        }
     }
     .slider-wrapper {
         width: 470px;
@@ -461,11 +483,44 @@ body {
             max-width: 100% !important;
         }
     }
+    .app {
+        &-md1 {
+            &-content {
+                flex-direction: column;
+                align-items: unset !important;
+            }
+            &-left {
+                width: 100%;
+            }
+            &-info {
+                margin: 0 auto !important;
+            }
+        }
+        &-md2 {
+            &-items {
+                flex-direction: column;
+                & .item-box {
+                    width: 100% !important;
+                } 
+            }
+        }
+        &-md3 {
+            &-img {
+                margin-bottom: 50px;
+            }
+            &-content {
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 @media (max-width: 560px) {
     .g-box {
         width: 100%;
+        &-faq {
+            width: 100%;
+        }
     }
     .footer {
         &-sponsor {
@@ -502,6 +557,12 @@ body {
         height: 2px;
         width: 40px;
     }
+    &-1-pink {
+        border: 1px solid $pinkColor;
+    }
+    &-r-ball {
+        border-radius: 50%;
+    }
 }
 
 .mg-center {
@@ -529,6 +590,9 @@ body {
         &-10 {
             padding-top: 10px;
         }
+        &-40 {
+            padding-top: 2.85714rem;
+        }
     }
     &-40-30 {
         padding: 40px 30px;
@@ -539,6 +603,12 @@ body {
         }
         &-10 {
             padding-bottom: 10px;
+        }
+        &-20 {
+            padding-bottom: 20px;
+        }
+        &-40 {
+            padding-bottom: 2.85714rem;
         }
     }
 }
@@ -552,7 +622,13 @@ body {
             margin-bottom: 30px;
         }
         &-15 {
-            margin-bottom: 15px;
+            margin-bottom: 1.07143rem;
+        }
+        &-10 {
+            margin-bottom: 0.71429rem;
+        }
+        &-20 {
+            margin-bottom: 1.42857rem;
         }
     }
     &-top {
@@ -562,6 +638,11 @@ body {
     }
     &-right {
         margin-left: auto;
+    }
+    &-right {
+        &-30 {
+            margin-right: 2.14286rem;
+        }
     }
 }
 
@@ -651,5 +732,20 @@ body {
 .pos {
     &-rel {
         position: relative;
+    }
+}
+
+.text {
+    &-uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.fill {
+    &-first {
+        fill: #fff;
+    }
+    &-second {
+        fill: rgba(154, 105, 203, 0.9);
     }
 }
